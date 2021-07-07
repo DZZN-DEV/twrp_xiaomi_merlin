@@ -53,6 +53,10 @@ TARGET_COPY_OUT_VENDOR := vendor
 AB_OTA_UPDATER := true
 TW_INCLUDE_REPACKTOOLS := true
 
+#Display
+TARGET_USES_GRALLOC1 := true
+TARGET_USES_HWC2 := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive androidboot.usbconfigfs=true
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
